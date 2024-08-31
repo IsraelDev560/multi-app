@@ -12,13 +12,12 @@ node server.jsx
 #### Endpoint para criar um usuário:
 
 ```http
-POST http://localhost:5000/users
+POST http://localhost:5000/register
 ```
 3. <strong>Prepare o corpo da requisição:</strong> Envie um corpo JSON com os dados necessários para criar um usuário. Exemplo:
 ```json
 {
   "name": "Nome do Usuário",
-  "email": "email@dominio.com",
   "password": "senha"
 }
 ```
@@ -26,13 +25,9 @@ POST http://localhost:5000/users
 4. <strong>Exemplo de requisição com curl:</strong> Se preferir usar curl, a requisição ficaria assim:
 
 ```bash
-    curl -X POST http://localhost:5000/users \
-    -H "Content-Type: application/json" \
-    -d '{
-      "name": "Nome do Usuário",
-      "email": "email@dominio.com",
-      "password": "senha"
-    }'
+    curl -X POST http://localhost:5000/register 
+    -H "Content-Type: application/json" 
+    -d '{"name": "admin", "password": "password"}'
 ```
 
 5. <strong>Verifique a resposta:</strong> O servidor deve responder com uma confirmação de que o usuário foi criado com sucesso. A resposta normalmente incluirá um status HTTP 201 (Created) e os detalhes do usuário criado.
