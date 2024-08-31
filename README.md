@@ -41,11 +41,11 @@ git clone https://github.com/IsraelDev560/multi-app
 ```
 2. Abra a pasta do frontend:
 ```bash
-  cd multi-app/frontend
+cd multi-app/frontend
 ```
 3. Instale as dependências do npm:
 ```
- npm install
+npm install
 ```
 4. Instale outras dependências, se necessário:
 ```bash
